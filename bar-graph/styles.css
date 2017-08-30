@@ -27,7 +27,7 @@ footer {
 
 .wrapper {
 	padding:1em 0;
-	background: #ffffff;	
+	background: #ffffff;
 }
 
 /* Bar graph
@@ -37,6 +37,6 @@ footer {
 	display:inline-block;
 	width:80px;
 	height:75px;
-	background:turquoise;
+	background:pink;
 	margin-right:5px;
 }

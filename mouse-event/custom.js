@@ -1,11 +1,13 @@
-var w = 960,
-h = 500;
+'use strict'
 
-var i = 0;
+const w = 960
+const h = 500
 
-var svg = d3.select('.container').append('svg')
+let i = 0
+
+const svg = d3.select('.container').append('svg')
 .attr('width', w)
-.attr('height', h);
+.attr('height', h)
 
 svg.append('rect')
 .attr('width', w)
@@ -14,7 +16,7 @@ svg.append('rect')
 
 function particle() {
 
-	var m = d3.mouse(this);
+	const m = d3.mouse(this);
 
 	svg.insert('circle', 'rect') // Inserts circle before rectangle
 	.attr('cx', m[0])
@@ -25,8 +27,8 @@ function particle() {
 	.transition()
     .duration(2000)
     .ease(Math.sqrt)
-    .attr("r", 100)
-    .style("stroke-opacity", 0)
+    .attr('r', 100)
+    .style('stroke-opacity', 0)
     .remove();
 
 	d3.event.preventDefault();
